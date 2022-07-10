@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import {nanoid} from 'nanoid'
 import './App.css';
 import AddTodo from "./components/AddTodo";
 import TodosList from "./components/TodosList";
