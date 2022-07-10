@@ -1,0 +1,26 @@
+.todos {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+@media screen and (max-width:1350px) {
+    .todos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .todos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .todos {
+        grid-template-columns: minmax(200px, 100%);
+        gap: 1em 0;
+        margin: 1em;
+    }
+}

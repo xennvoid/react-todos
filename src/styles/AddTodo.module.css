@@ -1,0 +1,25 @@
+.todos__form {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.todo__input {
+    padding: 0.3em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.todo__input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.todo__add {
+    padding: 0 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+}
