@@ -9,7 +9,6 @@ const AddTodo = ({todos, setTodos}) => {
     const addTodo = () => {
         if(inputText !== '') {
             console.log('Adding')
-
             const date = new Date()
             const newTodo = {id:nanoid(),text:inputText,completed:false,date:date.toLocaleDateString()}
             setTodos([...todos, newTodo])

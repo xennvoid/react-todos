@@ -7,6 +7,8 @@ function App() {
 
   const [todos,setTodos] = useState(() => getTodosFromLocalStorage())
 
+  console.log('render App')
+  
   useEffect(() => {
     console.log('todos changing')
     localStorage.setItem("todos", JSON.stringify(todos));
@@ -23,8 +25,8 @@ function App() {
   }
 
   return (
-    <div className="container">
-        <div className="app">
+    <div className="app">
+        <div className="container">
           <AddTodo todos={todos} setTodos={setTodos}/>
           <TodosList todos={todos} setTodos={setTodos}/>
         </div>

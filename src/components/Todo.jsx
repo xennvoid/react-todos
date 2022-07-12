@@ -3,16 +3,16 @@ import classes from '../styles/Todo.module.css';
 import { MdDeleteForever,MdEditNote } from 'react-icons/md';
 
 const Todo = ({todos,setTodos, todo}) => {
-
+    console.log('render Todo')
     function deleteTodo(id) {
-        const removeItem = [...todos].filter((todo) => {
+        const removeItem = todos.filter((todo) => {
             return todo.id !== id;
           });
         setTodos(removeItem);
     }
 
     function todoCompleted(id) {
-        const completed = [...todos].map((todo) => {
+        const completed = todos.map((todo) => {
             if(todo.id === id)
                 todo.completed = !todo.completed;
             return todo;

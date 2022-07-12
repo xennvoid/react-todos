@@ -1,11 +1,13 @@
 .todos__form {
+   margin: 1em 0;
    width: 100%;
    display: flex;
    justify-content: center;
 }
 
 .todo__input {
-    padding: 0.3em;
+    padding: 0.5em;
+    width: 100%;
     outline: none;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -18,8 +20,10 @@
 
 .todo__add {
     padding: 0 1em;
+    border:none;
+    background-color: #ff9800;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    background: white;
     cursor: pointer;
 }

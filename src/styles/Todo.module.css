@@ -1,9 +1,10 @@
 .todo {
     padding: 2em;
     border-radius: 0.5em;
-    background-color: white;
+    background-color: #dfd8d8;
     word-break: break-word;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .todo__content {
@@ -23,6 +24,6 @@
 }
 
 .completed {
-    background: #8bc34a;
+    background: #4caf50;
     transition: all 0.5s ease;
 }
