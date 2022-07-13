@@ -7,6 +7,8 @@
 
 .todo__input {
     padding: 0.5em;
+    display: flex;
+    flex: 1 1 100%;
     width: 100%;
     outline: none;
     font-family: 'Poppins', sans-serif;

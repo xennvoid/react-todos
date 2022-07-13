@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from '../styles/Todo.module.css';
-import { MdDeleteForever,MdEditNote } from 'react-icons/md';
+import { MdDeleteForever } from 'react-icons/md';
 
 const Todo = ({todos,setTodos, todo}) => {
-    console.log('render Todo')
+    
     function deleteTodo(id) {
         const removeItem = todos.filter((todo) => {
             return todo.id !== id;
