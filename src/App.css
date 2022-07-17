@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html, body, .app, .app>div {
+    height: 100%
+}
+
+
 body {
     background: #201d1c;
     font-family: 'Poppins', sans-serif;
@@ -15,4 +20,14 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 .5em;
+}
+
+.app.dark {
+    background: #201d1c;
+    transition: all 0.5s ease;
+}
+
+.app.light {
+    background: #fff;
+    transition: all 0.5s ease;
 }

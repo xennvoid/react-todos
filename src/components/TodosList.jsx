@@ -2,7 +2,7 @@ import React from 'react'
 import classes from '../styles/TodosList.module.css'
 import Todo from './Todo';
 
-const TodosList = ({todos,setTodos,filteredTodos}) => {
+const TodosList = React.memo(({todos,setTodos,filteredTodos}) => {
     
     console.log(filteredTodos)
     
@@ -13,7 +13,6 @@ const TodosList = ({todos,setTodos,filteredTodos}) => {
             )}
         </div>
     )
-}
-
+})
 
 export default TodosList;
