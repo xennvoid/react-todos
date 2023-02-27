@@ -1,11 +1,11 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
 const useTheme = () => {
 
-    const [theme,setTheme] = useState('dark')
+    const [theme, setTheme] = useState('dark')
 
     function toggleTheme() {
-        if(theme === 'dark') {
+        if (theme === 'dark') {
             setTheme('light')
         } else {
             setTheme('dark')
@@ -13,7 +13,7 @@ const useTheme = () => {
     }
 
     return {
-        theme,toggleTheme
+        theme, toggleTheme
     }
 }
 

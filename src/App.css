@@ -6,8 +6,14 @@
     box-sizing: border-box;
 }
 
-html, body, .app, .app>div {
-    height: 100%
+select, option {
+    font: -moz-pull-down-menu;
+}
+
+html, body, .app, .app > div {
+    min-height: 100vh;
+    height: 100%;
+    overflow:auto;
 }
 
 
